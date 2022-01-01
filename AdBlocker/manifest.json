@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "author": "Pixelguy",
+  "description": [
+    "Removes the Pack Promo button from the home screen."
+  ],
+  "gameVersion": "1.21.0",
+  "id": "AdBlocker",
+  "name": "AdBlocker",
+  "version": "1.0.4",
+  "dependsOn": {
+    "BSIPA":  "^4.2.1"
+  },
+  "links": {
+    "project-home": "https://github.com/JonnyVR1/AdBlocker",
+    "project-source": "https://github.com/JonnyVR1/AdBlocker/tree/master/AdBlocker"
+  }
+}
