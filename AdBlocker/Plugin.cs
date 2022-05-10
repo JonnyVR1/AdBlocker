@@ -2,6 +2,7 @@
 using IPA;
 using HarmonyLib;
 using IPA.Logging;
+using JetBrains.Annotations;
 
 namespace AdBlocker
 {
@@ -9,12 +10,13 @@ namespace AdBlocker
     public class Plugin
     {
         private const string HarmonyId = "com.BeatSaber.AdBlocker";
-        private static readonly Harmony HarmonyInstance = new Harmony(HarmonyId);
+        private static readonly Harmony HarmonyInstance = new(HarmonyId);
 
         private static Plugin Instance { get; set; }
 
         private static Logger Log { get; set; }
 
+        [UsedImplicitly]
         [Init]
         public void Init(Logger logger)
         {
@@ -23,9 +25,11 @@ namespace AdBlocker
             Log.Info("AdBlocker initialized.");
         }
 
+        [UsedImplicitly]
         [OnEnable]
         public void OnEnable() => HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
 
+        [UsedImplicitly]
         [OnDisable]
         public void OnDisable() => HarmonyInstance.UnpatchSelf();
     }

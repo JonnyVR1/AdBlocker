@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using JetBrains.Annotations;
 
 namespace AdBlocker.HarmonyPatches
 {
@@ -6,6 +7,7 @@ namespace AdBlocker.HarmonyPatches
     [HarmonyPatch("DidActivate")]
     internal class MainMenuViewControllerDidActivate
     {
+        [UsedImplicitly]
         internal static void Postfix(ref MusicPackPromoBanner ____musicPackPromoBanner) => ____musicPackPromoBanner.gameObject.SetActive(false);
     }
 }
