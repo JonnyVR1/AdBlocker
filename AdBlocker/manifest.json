@@ -4,12 +4,12 @@
   "description": [
     "Removes the Pack Promo button from the home screen."
   ],
-  "gameVersion": "1.21.0",
+  "gameVersion": "1.34.2",
   "id": "AdBlocker",
   "name": "AdBlocker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "dependsOn": {
-    "BSIPA":  "^4.2.1"
+    "BSIPA":  "^4.3.2"
   },
   "links": {
     "project-home": "https://github.com/JonnyVR1/AdBlocker",

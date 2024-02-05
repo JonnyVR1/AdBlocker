@@ -13,7 +13,6 @@ namespace AdBlocker
         private static readonly Harmony HarmonyInstance = new(HarmonyId);
 
         private static Plugin Instance { get; set; }
-
         private static Logger Log { get; set; }
 
         [UsedImplicitly]
